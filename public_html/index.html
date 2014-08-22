@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8" />
+    <title> Fa.Ke.Mata </title>
+    <!-- <link href='http://fonts.googleapis.com/css?family=Sacramento' rel='stylesheet' type='text/css' /> -->
+    <link rel="stylesheet" href="css/fakemata.css" />
+    <script src="js/processing.min.js"></script>
+    <script src="js/pitchdetect.js"></script>
+    <script src="js/fakemata.js"></script>
+</head>
+<body>
+    <div class="title">
+        <h1> FaKeMata </h1>
+    </div>
+
+    <canvas id="sketch" data-processing-sources="pde/FaKeMata.pde"></canvas>
+
+    <div class="notebook">
+        <input type="text" id="note_sequence" size="20"/>
+        <button id="input_start" onclick="toggleLiveInput()">Start Input</button>
+    </div>
+    <div id="detector" hidden="true">
+        <div class="pitch">pitch: <span id="pitch">--</span>Hz</div>
+        <div class="note">note: <span id="note">--</span></div>   
+    </div>
+</body>
+<script type="text/javascript">
+    var debugOn = false;
+    if (debugOn) {
+        document.getElementById('detector').hidden = false;
+    } else {
+    }
+</script>
+</html>
+
