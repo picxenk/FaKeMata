@@ -70,8 +70,8 @@ void stepGOL() {
 }
 
 void updateRule() {
-  String[] ruleB = {"C"};
-  String[] ruleS = {"E", "C"};
+  String[] ruleB = {"E"};
+  String[] ruleS = {"D", "E"};
   String[] ruleC = {};
   String[] codes = split(join(noteSequence, ","), "C,");
   if (codes.length == 3) {

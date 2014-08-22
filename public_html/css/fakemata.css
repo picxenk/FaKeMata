@@ -56,12 +56,12 @@ button#input_start {
 
 .title {
     font-family: 'Sacramento', cursive;
-    font-size: 12px;
+    font-size: 10px;
 
     position: absolute;
     z-index: 1;
     right: 10px;
-    top: -10px;
+    top: -15px;
 }
 
 .notebook {
